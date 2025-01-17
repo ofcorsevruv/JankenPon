@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/tempConvert/style.css" />
+  </head>
+  <body bgcolor="black">
+    <div>
+      <div>
+        <h1>Temperature Converter</h1>
+        <input
+          type="text"
+          id="tempInput"
+          placeholder="temperature"
+        /><!-- get user input form here -->
+      </div>
+      <div>
+        <input type="radio" id="fahrenToCel" name="convChoice" />
+        <label for="fahrenToCel">Fahrenheit to Celsius</label
+        ><!-- these are checkboxes, they are used to give the user a choice -->
+        <br />
+        <input type="radio" id="celtoFahren" name="convChoice" />
+        <label for="celtoFahren">Celsius to Fahrenheit</label
+        ><!-- these are checkboxes, they are used to give the user a choice -->
+      </div>
+      <button id="confirmBtn" onclick="convert()">Confirm</button
+      ><!--This button is used to confirm the user's choice-->
+      <h2 id="finalTemp">30°C</h2>
+      <!--The final converted temperature will be displayed here either in Fahrenheit or Celsius-->
+    </div>
+    <script src="/tempConvert/index.js"></script>
+  </body>
+</html>
